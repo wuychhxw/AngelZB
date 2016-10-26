@@ -6,10 +6,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Home View Controller-->
         <scene sceneID="tfg-ax-NWn">
             <objects>
-                <viewController id="xbt-Dl-D6n" sceneMemberID="viewController">
+                <viewController id="xbt-Dl-D6n" customClass="HomeViewController" customModule="AngelZB" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="CnU-Bt-XZU"/>
                         <viewControllerLayoutGuide type="bottom" id="bJ4-pP-iFq"/>
