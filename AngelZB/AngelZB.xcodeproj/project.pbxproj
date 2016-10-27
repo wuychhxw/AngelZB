@@ -7,11 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		177FE27D1DC09D7900F05EA5 /* ReCommendViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 177FE27C1DC09D7900F05EA5 /* ReCommendViewController.swift */; };
 		17840B121DBDD8DD00A800E3 /* PageTitleUIVIew.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17840B111DBDD8DD00A800E3 /* PageTitleUIVIew.swift */; };
 		17840B141DBDDC5C00A800E3 /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17840B131DBDDC5C00A800E3 /* Common.swift */; };
 		179128D11DB0B7E9002C9DEF /* Live.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 179128D01DB0B7E9002C9DEF /* Live.storyboard */; };
 		179128D51DB0B871002C9DEF /* Follow.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 179128D41DB0B871002C9DEF /* Follow.storyboard */; };
 		179128D71DB0B87B002C9DEF /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 179128D61DB0B87B002C9DEF /* Profile.storyboard */; };
+		17C408F91DC18A08000D079E /* CollectionHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17C408F71DC18A08000D079E /* CollectionHeaderView.swift */; };
+		17C408FA1DC18A08000D079E /* CollectionHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 17C408F81DC18A08000D079E /* CollectionHeaderView.xib */; };
 		17EA41D01DBEE939002C9EF5 /* PageContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17EA41CF1DBEE939002C9EF5 /* PageContentView.swift */; };
 		17EA41D21DBEEDA9002C9EF5 /* UIColor-extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17EA41D11DBEEDA9002C9EF5 /* UIColor-extension.swift */; };
 		17FC2FFE1DBD982800EBAA53 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17FC2FFD1DBD982800EBAA53 /* Main.storyboard */; };
@@ -25,11 +28,14 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		177FE27C1DC09D7900F05EA5 /* ReCommendViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReCommendViewController.swift; sourceTree = "<group>"; };
 		17840B111DBDD8DD00A800E3 /* PageTitleUIVIew.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageTitleUIVIew.swift; sourceTree = "<group>"; };
 		17840B131DBDDC5C00A800E3 /* Common.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
 		179128D01DB0B7E9002C9DEF /* Live.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Live.storyboard; sourceTree = "<group>"; };
 		179128D41DB0B871002C9DEF /* Follow.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Follow.storyboard; sourceTree = "<group>"; };
 		179128D61DB0B87B002C9DEF /* Profile.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
+		17C408F71DC18A08000D079E /* CollectionHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionHeaderView.swift; sourceTree = "<group>"; };
+		17C408F81DC18A08000D079E /* CollectionHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CollectionHeaderView.xib; sourceTree = "<group>"; };
 		17EA41CF1DBEE939002C9EF5 /* PageContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageContentView.swift; sourceTree = "<group>"; };
 		17EA41D11DBEEDA9002C9EF5 /* UIColor-extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor-extension.swift"; sourceTree = "<group>"; };
 		17FC2FFD1DBD982800EBAA53 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
@@ -84,6 +90,7 @@
 			isa = PBXGroup;
 			children = (
 				17FC30001DBD98A300EBAA53 /* HomeViewController.swift */,
+				177FE27C1DC09D7900F05EA5 /* ReCommendViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -99,6 +106,8 @@
 			isa = PBXGroup;
 			children = (
 				17FC30031DBD98A300EBAA53 /* Home.storyboard */,
+				17C408F71DC18A08000D079E /* CollectionHeaderView.swift */,
+				17C408F81DC18A08000D079E /* CollectionHeaderView.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -266,6 +275,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				17FC30051DBD98A300EBAA53 /* Home.storyboard in Resources */,
+				17C408FA1DC18A08000D079E /* CollectionHeaderView.xib in Resources */,
 				1DB850CA1D9CA85A0062307A /* LaunchScreen.storyboard in Resources */,
 				1DB850C71D9CA85A0062307A /* Assets.xcassets in Resources */,
 				179128D71DB0B87B002C9DEF /* Profile.storyboard in Resources */,
@@ -283,7 +293,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				17FC30071DBD9E0E00EBAA53 /* MainViewController.swift in Sources */,
+				17C408F91DC18A08000D079E /* CollectionHeaderView.swift in Sources */,
 				17EA41D21DBEEDA9002C9EF5 /* UIColor-extension.swift in Sources */,
+				177FE27D1DC09D7900F05EA5 /* ReCommendViewController.swift in Sources */,
 				17840B121DBDD8DD00A800E3 /* PageTitleUIVIew.swift in Sources */,
 				1DB850C01D9CA85A0062307A /* AppDelegate.swift in Sources */,
 				17EA41D01DBEE939002C9EF5 /* PageContentView.swift in Sources */,

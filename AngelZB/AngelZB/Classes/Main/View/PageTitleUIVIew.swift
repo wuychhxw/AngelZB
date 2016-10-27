@@ -122,6 +122,26 @@ extension PageTitleUIVIew {
     }
 }
 
+extension PageTitleUIVIew {
+    func setTitleWithProgress(progess:CGFloat, sourceIndex:Int, targetIndex:Int){
+        //取得源label
+        let sourceLab = titleLabels[sourceIndex]
+        //取得目标label
+        let targetLab = titleLabels[targetIndex]
+        //计算滑动条的滑动距离
+        let moveX = (targetLab.frame.origin.x - sourceLab.frame.origin.x)*progess
+        self.scrollLine.frame.origin.x = sourceLab.frame.origin.x + moveX
+        
+        let colorDelta = (kSelectColor.0 - kNormalColor.0,kSelectColor.1 - kNormalColor.1,kSelectColor.2 - kNormalColor.2)
+        
+        sourceLab.textColor = UIColor(r: kSelectColor.0 - colorDelta.0 * progess, g: kSelectColor.1 - colorDelta.1 * progess, b: kSelectColor.2 - colorDelta.2 * progess)
+        
+        targetLab.textColor = UIColor(r: kNormalColor.0 + colorDelta.0 * progess, g: kNormalColor.1 + colorDelta.1 * progess, b: kNormalColor.2 + colorDelta.2 * progess)
+        
+        currentIndex = targetIndex
+    }
+}
+
 
 
 

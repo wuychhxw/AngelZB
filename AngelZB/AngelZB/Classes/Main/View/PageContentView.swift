@@ -17,6 +17,7 @@ class PageContentView: UIView {
     var childVCS:[UIViewController]
     weak var parentVC:UIViewController?
     var startOffsetX : CGFloat = 0
+    var isForbidScrollDelegate : Bool = false
     weak var delegate:PageContentViewDelegate?
     
     lazy var conllectionView : UICollectionView = {[weak self] in
@@ -79,10 +80,12 @@ extension PageContentView : UICollectionViewDataSource {
 
 extension PageContentView : UICollectionViewDelegate {
     func scrollViewWillBeginDragging(_ scrollView: UIScrollView) {
+        isForbidScrollDelegate = false
         startOffsetX = scrollView.bounds.origin.x
     }
     
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        if isForbidScrollDelegate {return}
         var progress : CGFloat = 0
         var sourceIndex : Int = 0
         var targetIndex : Int = 0
@@ -126,6 +129,7 @@ extension PageContentView : UICollectionViewDelegate {
 
 extension PageContentView {
     func setCurrentIndex(index:Int) {
+        isForbidScrollDelegate = true
         let offsetX = CGFloat(index) * conllectionView.frame.width
         conllectionView.setContentOffset(CGPoint(x:offsetX,y:0), animated: false)
     }
